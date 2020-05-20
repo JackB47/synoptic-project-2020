@@ -1,0 +1,8 @@
+$candyColours: (
+  "blue": #205d86,
+  "green": #99eabe,
+);
+
+@function candy-colour($key: "primary") {
+  @return map-get($candyColours, $key);
+}

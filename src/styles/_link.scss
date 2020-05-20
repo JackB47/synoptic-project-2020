@@ -1,0 +1,18 @@
+.link {
+  text-decoration: none;
+  color: candy-colour("blue");
+  fill: candy-colour("blue");
+  transition-property: color, fill;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+
+  &:visited {
+    color: candy-colour("blue");
+  }
+
+  &:hover,
+  &:visited:hover {
+    color: darken(candy-colour("blue"), 10%);
+    fill: darken(candy-colour("blue"), 10%);
+  }
+}
