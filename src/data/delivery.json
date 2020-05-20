@@ -1,0 +1,19 @@
+{
+  "deliveryCosts": [
+    {
+      "minWeight": 40,
+      "maxWeight": 250,
+      "price": 1.50
+    },
+    {
+      "minWeight": 251,
+      "maxWeight": 500,
+      "price": 2.00
+    },
+    {
+      "minWeight": 500,
+      "maxWeight": 9999999,
+      "price": 1.50
+    }
+  ]
+}

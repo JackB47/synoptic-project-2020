@@ -1,0 +1,39 @@
+{
+  "sweets": [
+    {
+      "type": "Rhubarb & Custard",
+      "weight": 2.5,
+      "pricePerGram": 0.01
+    },
+    {
+      "type": "Kola Kubes",
+      "weight": 2.0,
+      "pricePerGram": 0.02
+    },
+    {
+      "type": "Pear Drops",
+      "weight": 1.0,
+      "pricePerGram": 0.01
+    },
+    {
+      "type": "Chocolate Limes",
+      "weight": 3.0,
+      "pricePerGram": 0.03
+    },
+    {
+      "type": "Aniseed Twists",
+      "weight": 2.7,
+      "pricePerGram": 0.03
+    },
+    {
+      "type": "Everton Mints",
+      "weight": 3.0,
+      "pricePerGram": 0.04
+    },
+    {
+      "type": "Fruit BonBons",
+      "weight": 2.0,
+      "pricePerGram": 0.02
+    }
+  ]
+}
