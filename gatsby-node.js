@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 const path = require("path")
-const sweetData = require("./public/data/sweets.json")
+const sweetData = path.resolve("src/static/data/sweets.json")
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
