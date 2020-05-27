@@ -1,7 +1,9 @@
 h1,
 h2,
-h3 {
+h3,
+thead td {
   font-family: Pacifico, "Lucida Sans", Verdana, sans-serif;
+  color: candy-colour("blue");
 }
 
 p,
@@ -10,7 +12,8 @@ li,
 small,
 strong,
 button,
-input {
+input,
+td {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   color: candy-colour("black");
 }
