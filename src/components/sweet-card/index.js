@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react"
+import localForage from "localforage"
+import Button from "../button"
+import Input from "../input"
 
 export default function SweetCard({ currentSweet }) {
-  const [sweet, setSweet] = useState({ type: "", price: "" })
+  console.log(currentSweet)
+  const [sweet, setSweet] = useState({ type: "", price: "", imageUrl: "" })
   const [quantity, setQuantity] = useState(0)
 
   useEffect(() => {
-    const { type, pricePerGram } = currentSweet
+    const { type, pricePerGram, imageUrl } = currentSweet
     setSweet({
       type,
       price: pricePerGram,
+      imageUrl,
     })
   }, [currentSweet])
 
@@ -27,45 +32,68 @@ export default function SweetCard({ currentSweet }) {
     setQuantity(parseInt(e.target.value))
   }
 
-  const handleSubmit = (e, sweet) => {
+  const handleSubmit = async (e, sweet) => {
     e.preventDefault()
-    localStorage.setItem(("currentOrder"[sweet] = quantity))
+    const currentOrder = (await localForage.getItem("currentOrder")) || []
+    if (quantity > 0) {
+      if (currentOrder.find(item => item.id === currentSweet.id)) {
+        currentOrder.find(
+          item => item.id === currentSweet.id
+        ).quantity += quantity
+      } else {
+        currentOrder.push({ id: currentSweet.id, quantity })
+      }
+
+      setQuantity(0)
+      return localForage.setItem("currentOrder", currentOrder)
+    }
   }
 
   return (
-    <div
-      style={{
-        textAlign: "center",
-        flex: "0 0 18%",
-        marginBottom: 40,
-        marginRight: 40,
-      }}
-    >
+    <div className="sweet-card">
       <div>
-        <img src="https://picsum.photos/200" />
+        <img className="sweet-card__image" src={sweet.imageUrl} />
         <div>
           <p>{sweet.type}</p>
           <p>&pound;{sweet.price}/gram</p>
         </div>
-        <div>
-          <button type="button" onClick={() => handleQuantityChange("dec")}>
-            -1
-          </button>
-          <input
+        <div className="sweet-card__input-group">
+          <div>
+            <Button
+              variant="pink"
+              isRound
+              onClick={() => handleQuantityChange("dec")}
+            >
+              &minus;
+            </Button>
+          </div>
+          <Input
+            className="sweet-card__input"
+            isCentered
             min={0}
             type="number"
             defaultValue={0}
             value={quantity}
             onChange={handleInputChange}
           />
-          <button type="button" onClick={() => handleQuantityChange("inc")}>
-            +1
-          </button>
           <div>
-            <button type="submit" onClick={e => handleSubmit(e, sweet.type)}>
-              Add to Basket
-            </button>
+            <Button
+              variant="green"
+              isRound
+              onClick={() => handleQuantityChange("inc")}
+            >
+              &#43;
+            </Button>
           </div>
+        </div>
+        <div>
+          <Button
+            disabled={quantity <= 0}
+            type="submit"
+            onClick={e => handleSubmit(e, sweet.type)}
+          >
+            Add to Basket
+          </Button>
         </div>
       </div>
     </div>

@@ -8,6 +8,14 @@ p,
 a,
 li,
 small,
-strong {
+strong,
+button,
+input {
   font-family: Quicksand, Arial, Helvetica, sans-serif;
+  color: candy-colour("black");
+}
+
+input {
+  appearance: none;
+  border: none;
 }

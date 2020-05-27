@@ -1,6 +1,9 @@
 $candyColours: (
   "blue": #205d86,
+  "pink": #ff7682,
   "green": #99eabe,
+  "white": #eeeeee,
+  "black": #313131,
 );
 
 @function candy-colour($key: "primary") {

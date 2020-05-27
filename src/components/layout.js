@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "normalize.css"
@@ -18,13 +18,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
-  console.log(localForage.getItem("currentOrder"))
-
-  // localForage.getItem("currentOrder") === null &&
-  //   localForage.setItem("currentOrder", [
-  //     sweetData.forEach(sweet)
-  //   ])
 
   return (
     <>

@@ -1,0 +1,65 @@
+.button {
+  appearance: none;
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bolder;
+
+  &--pink {
+    background-color: candy-colour("pink");
+    color: candy-colour("white");
+  }
+
+  &--green {
+    background-color: candy-colour("green");
+    color: candy-colour("white");
+  }
+
+  &--round {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+  }
+
+  &--default {
+    border: 2px solid candy-colour("blue");
+    border-radius: 20px;
+    padding: 8px 12px;
+    transition-property: background-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+
+    &:hover:enabled {
+      background-color: candy-colour("blue");
+      color: candy-colour("white");
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: calc(100% - 4px);
+      background-color: candy-colour("blue");
+      display: block;
+    }
+  }
+
+  &::before {
+    transform: rotate(10deg);
+    top: 16px;
+    left: 1px;
+  }
+
+  &::after {
+    transform: rotate(-10deg);
+    top: 16px;
+    right: 1px;
+  }
+}
