@@ -1,0 +1,33 @@
+.sweet-card {
+  text-align: center;
+  flex: 0 0 18%;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  font-weight: bolder;
+
+  &__input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  &__input {
+    width: 80px;
+    margin: 0 12px;
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+
+    padding: 4px;
+    border-radius: 8px;
+    border: 2px solid candy-colour("blue");
+  }
+}

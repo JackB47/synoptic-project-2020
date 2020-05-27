@@ -1,9 +1,12 @@
-@import "./reset/reset.css";
-@import "./reset/base.css";
-
 @import "./settings/colours.scss";
 
+@import "./reset/reset.css";
+@import "./reset/base.scss";
 // Components
+
+@import "./button";
+@import "./input";
 @import "./link";
 @import "./navbar";
 @import "./title";
+@import "./sweet-card";
