@@ -9,7 +9,7 @@ import Header from "./header"
 import "../styles/app.scss"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, type, footerSpaced }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,24 +20,35 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1200,
-        }}
-      >
-        <main>{children}</main>
-        <Footer />
-      </div>
-    </>
-  )
+  if (type !== "lander") {
+    return (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 1200,
+          }}
+        >
+          <main>{children}</main>
+        </div>
+        <Footer hasExtraSpacing={footerSpaced} />
+      </>
+    )
+  }
+
+  return <main>{children}</main>
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  footerSpaced: PropTypes.bool,
+  type: PropTypes.string,
+}
+
+Layout.defaultProps = {
+  type: "default",
+  footerSpaced: false,
 }
 
 export default Layout

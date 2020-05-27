@@ -9,13 +9,18 @@ import SweetCard from "../components/sweet-card"
 import sweetData from "../data/sweets.json"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Products" />
-    {console.log(sweetData)}
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
-      {sweetData.map(sweet => (
-        <SweetCard currentSweet={sweet} key={sweet.id} />
-      ))}
+  <Layout type="lander">
+    <SEO title="Pick & Mix Homepage" />
+    <div className="lander">
+      <div className="lander__content">
+        <div className="lander__title">
+          <h1>Welcome to Pick &amp; Mix</h1>
+          <h2>Click below to get started</h2>
+        </div>
+        <Link className="lander__link" to="/products">
+          Get Started
+        </Link>
+      </div>
     </div>
   </Layout>
 )

@@ -2,23 +2,28 @@ import React, { useEffect, useState } from "react"
 import localForage from "localforage"
 import Button from "../button"
 import Input from "../input"
+import { Link } from "gatsby"
 
 export default function SweetCard({ currentSweet }) {
-  console.log(currentSweet)
-  const [sweet, setSweet] = useState({ type: "", price: "", imageUrl: "" })
+  const [sweet, setSweet] = useState({
+    id: "",
+    type: "",
+    price: "",
+    imageUrl: "",
+  })
   const [quantity, setQuantity] = useState(0)
 
   useEffect(() => {
-    const { type, pricePerGram, imageUrl } = currentSweet
+    const { id, type, pricePerGram, imageUrl } = currentSweet
     setSweet({
       type,
       price: pricePerGram,
       imageUrl,
+      id,
     })
   }, [currentSweet])
 
   const handleQuantityChange = change => {
-    console.log(quantity)
     if (change === "dec" && quantity > 0) {
       return setQuantity(quantity - 1)
     } else if (change === "inc") {
@@ -54,7 +59,7 @@ export default function SweetCard({ currentSweet }) {
       <div>
         <img className="sweet-card__image" src={sweet.imageUrl} />
         <div>
-          <p>{sweet.type}</p>
+          <Link to={`/product/:${sweet.id}`}>{sweet.type}</Link>
           <p>&pound;{sweet.price}/gram</p>
         </div>
         <div className="sweet-card__input-group">

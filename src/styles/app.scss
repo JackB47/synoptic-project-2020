@@ -5,10 +5,18 @@
 // Components
 
 @import "./button";
+@import "./footer";
+@import "./generic-content";
 @import "./header";
 @import "./input";
+@import "./lander";
 @import "./link";
 @import "./navbar";
 @import "./table";
 @import "./title";
 @import "./sweet-card";
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

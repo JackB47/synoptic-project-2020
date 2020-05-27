@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  background-color: candy-colour("green");
+  padding-top: 8px;
+  padding-bottom: 32px;
+  font-size: 20px;
+  position: absolute;
+  top: calc(100% - 48px);
+  width: calc(100% - 32px);
+  justify-content: space-between;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  &--spaced {
+    margin-top: 200px;
+  }
+
+  &__block {
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__header {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  &__links {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      width: 120px;
+      margin-right: 20px;
+      text-decoration: none;
+      transition: opacity 150ms ease-in;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}

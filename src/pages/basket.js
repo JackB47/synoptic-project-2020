@@ -47,7 +47,6 @@ export default function Basket() {
     )
 
     for (let i = 0; i < weights.length; i++) {
-      console.log(grossweight)
       grossweight = grossweight + weights[i]
       setGrossWeight(grossweight)
     }
@@ -63,11 +62,14 @@ export default function Basket() {
   }, [grossWeight, subTotal])
 
   const handleCheckout = () => {
-    grossWeight < 40
-      ? alert(
-          "The minimum weight for delivery is 40g, please add more before proceeding to checkout"
-        )
-      : alert("Thank you for ordering")
+    if (grossWeight < 40) {
+      return alert(
+        "The minimum weight for delivery is 40g, please add more before proceeding to checkout"
+      )
+    }
+
+    alert("Thank you for ordering")
+    localForage.clear()
   }
 
   return (
@@ -90,7 +92,6 @@ export default function Basket() {
                   (sweet.quantity * filterById(sweet.id).weight)
                 return (
                   <tr>
-                    {console.log(sweet)}
                     <td className="table__cell-title">
                       {filterById(sweet.id).type}
                     </td>
