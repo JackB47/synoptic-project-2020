@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import localForage from "localforage"
 
 import deliveryData from "../data/delivery.json"
-import sweetData from "./sweets.json"
+import sweetData from "../../sweets.json"
 import Layout from "../components/layout"
 import Button from "../components/button"
 

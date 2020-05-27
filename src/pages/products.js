@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SweetCard from "../components/sweet-card"
 
-import sweetData from "./sweets.json"
+import sweetData from "../../sweets.json"
 
 const IndexPage = () => (
   <Layout footerSpaced>

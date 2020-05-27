@@ -7,7 +7,10 @@ export default function Product({ pageContext }) {
     <Layout>
       {product ? (
         <div>
-          <img src={`/${product.imageUrl}`} />
+          <img
+            src={`/${product.imageUrl}`}
+            style={{ height: 200, width: 200 }}
+          />
           <h2>{product.type}</h2>
         </div>
       ) : (
