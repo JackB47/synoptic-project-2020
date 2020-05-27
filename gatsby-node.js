@@ -11,7 +11,7 @@ const sweetData = require("./public/data/sweets.json")
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
   const productTemplate = path.resolve(`src/pages/templates/product.js`)
-  sweetData.map(sweet => {
+  sweetData.forEach(sweet => {
     createPage({
       path: `/product/${sweet.id}`,
       component: productTemplate,
