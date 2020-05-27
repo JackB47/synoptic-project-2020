@@ -4,48 +4,48 @@
     "type": "Rhubarb & Custard",
     "weight": 2.5,
     "pricePerGram": 0.01,
-    "imageUrl": "public/images/rhubarb-custard.jpg"
+    "imageUrl": "../images/rhubarb-custard.jpg"
   },
   {
     "id": 2,
     "type": "Kola Kubes",
     "weight": 2.0,
     "pricePerGram": 0.02,
-    "imageUrl": "public/images/kola-kubes.jpg"
+    "imageUrl": "../images/kola-kube.jpg"
   },
   {
     "id": 3,
     "type": "Pear Drops",
     "weight": 1.0,
     "pricePerGram": 0.01,
-    "imageUrl": "public/images/pear-drops.jpg"
+    "imageUrl": "../images/pear-drops.webp"
   },
   {
     "id": 4,
     "type": "Chocolate Limes",
     "weight": 3.0,
     "pricePerGram": 0.03,
-    "imageUrl": "public/images/chocolate-limes.jpg"
+    "imageUrl": "../images/chocolate-limes.webp"
   },
   {
     "id": 5,
     "type": "Aniseed Twists",
     "weight": 2.7,
     "pricePerGram": 0.03,
-    "imageUrl": "public/images/aniseed-twists.jpg"
+    "imageUrl": "../images/aniseed-twists.webp"
   },
   {
     "id": 6,
     "type": "Everton Mints",
     "weight": 3.0,
     "pricePerGram": 0.04,
-    "imageUrl": "public/images/everton-mints.jpg"
+    "imageUrl": "../images/everton-mints.jpg"
   },
   {
     "id": 7,
     "type": "Fruit BonBons",
     "weight": 2.0,
     "pricePerGram": 0.02,
-    "imageUrl": "public/images/fruit-bonbons.jpg"
+    "imageUrl": "../images/fruit-bonbons.jpg"
   }
 ]
