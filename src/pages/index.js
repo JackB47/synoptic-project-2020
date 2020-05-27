@@ -3,11 +3,8 @@ import { Router as MyRouter } from "@reach/router"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import SweetCard from "../components/sweet-card"
 
-import sweetData from "../data/sweets.json"
 import Products from "../pages/products"
 import Product from "./templates/product"
 
