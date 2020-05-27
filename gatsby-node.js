@@ -12,6 +12,7 @@ exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
   const productTemplate = path.resolve(`src/pages/templates/product.js`)
   sweetData &&
+    sweetData.length > 0 &&
     sweetData.map(sweet => {
       createPage({
         path: `/product/${sweet.id}`,
