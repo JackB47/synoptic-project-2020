@@ -11,13 +11,14 @@ const sweetData = path.resolve("src/static/data/sweets.json")
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
   const productTemplate = path.resolve(`src/pages/templates/product.js`)
-  sweetData.map(sweet => {
-    createPage({
-      path: `/product/${sweet.id}`,
-      component: productTemplate,
-      context: {
-        product: sweet,
-      },
+  sweetData &&
+    sweetData.map(sweet => {
+      createPage({
+        path: `/product/${sweet.id}`,
+        component: productTemplate,
+        context: {
+          product: sweet,
+        },
+      })
     })
-  })
 }
