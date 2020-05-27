@@ -1,4 +1,5 @@
 import React from "react"
+import { Router as MyRouter } from "@reach/router"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,6 +8,8 @@ import SEO from "../components/seo"
 import SweetCard from "../components/sweet-card"
 
 import sweetData from "../data/sweets.json"
+import Products from "../pages/products"
+import Product from "./templates/product"
 
 const IndexPage = () => (
   <Layout type="lander">
@@ -22,6 +25,11 @@ const IndexPage = () => (
         </Link>
       </div>
     </div>
+
+    <MyRouter>
+      <Products path="/products" />
+      <Product path="/product/:id" />
+    </MyRouter>
   </Layout>
 )
 

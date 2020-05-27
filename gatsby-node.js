@@ -5,3 +5,19 @@
  */
 
 // You can delete this file if you're not using it
+const path = require("path")
+const sweetData = require("./public/data/sweets.json")
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+  const productTemplate = path.resolve(`src/pages/templates/product.js`)
+  sweetData.map(sweet => {
+    createPage({
+      path: `/product/${sweet.id}`,
+      component: productTemplate,
+      context: {
+        product: sweet,
+      },
+    })
+  })
+}

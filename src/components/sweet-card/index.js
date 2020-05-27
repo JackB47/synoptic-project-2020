@@ -59,7 +59,7 @@ export default function SweetCard({ currentSweet }) {
       <div>
         <img className="sweet-card__image" src={sweet.imageUrl} />
         <div>
-          <Link to={`/product/:${sweet.id}`}>{sweet.type}</Link>
+          <Link to={`/product/${sweet.id}`}>{sweet.type}</Link>
           <p>&pound;{sweet.price}/gram</p>
         </div>
         <div className="sweet-card__input-group">
