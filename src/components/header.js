@@ -5,10 +5,10 @@ import ShoppingCart from "./icon"
 
 export default function Header() {
   return (
-    <header>
+    <header className="header">
       <nav className="navbar">
         <Link to="/" className="link">
-          <h1 className="title">Pick &amp; Mix Candy</h1>
+          <h1 className="title title--navbar">Pick &amp; Mix Candy</h1>
         </Link>
         <ul className="navbar__links">
           <li className="navbar__link-item">

@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+  position: relative;
+
+  &__head td {
+    font-size: 28px;
+  }
+
+  &__divider {
+    background: candy-colour("black");
+  }
+
+  &__cell-title {
+    font-weight: bold;
+  }
+
+  td:nth-child(2),
+  td:nth-child(3) {
+    text-align: right;
+  }
+}
