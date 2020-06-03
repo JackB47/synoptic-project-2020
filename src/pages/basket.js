@@ -39,7 +39,7 @@ export default function Basket() {
       subtotal = subtotal + prices[i]
       setSubTotal(subtotal)
     }
-  }, [orderedSweets, subTotal])
+  }, [orderedSweets])
 
   useEffect(() => {
     let grossweight = grossWeight

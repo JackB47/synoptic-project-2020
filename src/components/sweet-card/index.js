@@ -11,6 +11,7 @@ export default function SweetCard({ currentSweet }) {
     imageUrl: "",
   })
 
+  // Update the sweet data when the currentSweet prop is available
   useEffect(() => {
     const { id, type, pricePerGram, imageUrl } = currentSweet
     setSweet({

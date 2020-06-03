@@ -7,6 +7,7 @@
 const path = require("path")
 const sweetData = require("./sweets.json")
 
+// Create a page for each product in our data JSON file
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
   const productTemplate = path.resolve(`src/pages/templates/product.js`)

@@ -7,6 +7,7 @@ import Input from "../input"
 export default function SweetInputGroup({ sweet, variant }) {
   const [quantity, setQuantity] = useState(0)
 
+  // Increment or Decrement if buttons are clicked
   const handleButtonQuantityChange = change => {
     if (change === "dec" && quantity > 0) {
       return setQuantity(quantity - 1)
@@ -21,6 +22,7 @@ export default function SweetInputGroup({ sweet, variant }) {
     setQuantity(parseInt(e.target.value))
   }
 
+  // Add the current selected sweets to localForage
   const handleSubmit = async (e, sweet) => {
     e.preventDefault()
     const currentOrder = (await localForage.getItem("currentOrder")) || []
