@@ -18,6 +18,13 @@
     object-fit: cover;
     border: 2px solid candy-colour("blue");
     padding: 8px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 300px;
+      max-height: 300px;
+      margin: 0 auto;
+      margin-bottom: 32px;
+    }
   }
 
   &__title {
@@ -31,6 +38,14 @@
 
   &__content {
     margin-left: 120px;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin-left: 32px;
+    }
   }
 
   p {

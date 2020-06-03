@@ -27,6 +27,7 @@ export default function Basket() {
     getCurrentOrder()
   }, [])
 
+  // Calculate the current price using the weight provided in the data store
   useEffect(() => {
     let subtotal = subTotal
     const prices = orderedSweets.map(
@@ -41,6 +42,7 @@ export default function Basket() {
     }
   }, [orderedSweets])
 
+  // Calculate the total weight of the goods
   useEffect(() => {
     let grossweight = grossWeight
     const weights = orderedSweets.map(
@@ -53,6 +55,7 @@ export default function Basket() {
     }
   }, [orderedSweets])
 
+  // Calculate the weight bracket based on the weight provided
   useEffect(() => {
     deliveryData.map(
       weightBracket =>
@@ -62,6 +65,7 @@ export default function Basket() {
     )
   }, [grossWeight, subTotal])
 
+  // If the weight doesn't meet the requirements tell the user.
   const handleCheckout = () => {
     if (grossWeight < 40) {
       return alert(
@@ -69,6 +73,8 @@ export default function Basket() {
       )
     }
 
+    // Otherwise process the order...
+    // This would be where the user gets sent to a checkout such as Stripe
     alert("Thank you for ordering")
     localForage.clear()
   }

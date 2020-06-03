@@ -31,7 +31,7 @@ const Layout = ({ children, type, footerSpaced }) => {
             flex: "1 1 auto",
           }}
         >
-          <main>{children}</main>
+          <main style={{ padding: "0 32px" }}>{children}</main>
         </div>
         <Footer hasExtraSpacing={footerSpaced} />
       </div>

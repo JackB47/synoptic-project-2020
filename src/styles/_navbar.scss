@@ -4,9 +4,19 @@
   padding: 20px 80px 20px 32px;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    padding: 8px;
+  }
+
   &__links {
     display: flex;
     list-style-type: none;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      font-size: 16px;
+      text-align: center;
+    }
   }
 
   &__link-item {
