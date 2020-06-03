@@ -21,7 +21,6 @@ export default function Product({ pageContext }) {
             }}
           />
           <div className="product__content">
-            {console.log(product)}
             <h2 className="title product__title">{product.type}</h2>
             <div dangerouslySetInnerHTML={{ __html: product.description }} />
             <div className="product__divider" />
