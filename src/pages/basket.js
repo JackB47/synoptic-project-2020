@@ -51,7 +51,7 @@ export default function Basket() {
       grossweight = grossweight + weights[i]
       setGrossWeight(grossweight)
     }
-  }, [orderedSweets, grossWeight])
+  }, [orderedSweets])
 
   useEffect(() => {
     deliveryData.map(
