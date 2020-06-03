@@ -5,12 +5,6 @@
   margin-right: 40px;
   font-weight: bolder;
 
-  &__input-group {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12px;
-  }
-
   &__input {
     width: 80px;
     margin: 0 12px;
@@ -29,5 +23,20 @@
     padding: 8px;
     border-radius: 8px;
     border: 2px solid candy-colour("blue");
+  }
+}
+
+.sweet-card__input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+
+  &--spaced {
+    justify-content: flex-start;
+
+    button[type="submit"] {
+      margin-left: 120px;
+      padding: 8px 24px;
+    }
   }
 }
