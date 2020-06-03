@@ -4,48 +4,55 @@
     "type": "Rhubarb & Custard",
     "weight": 2.5,
     "pricePerGram": 0.01,
-    "imageUrl": "../images/rhubarb-custard.jpg"
+    "imageUrl": "../images/rhubarb-custard.jpg",
+    "description": "<p>Ipsum velit occaecat deserunt nisi proident. Proident exercitation esse ex veniam reprehenderit Lorem magna occaecat ad. Duis nisi cupidatat tempor adipisicing esse quis cupidatat amet ad occaecat proident. Ex reprehenderit aute laborum officia. Eiusmod et ea sunt proident consequat id ipsum elit dolor consequat labore. Velit consectetur irure ut qui est commodo proident laboris excepteur excepteur proident ut incididunt.</p><p>Id amet do culpa ex aute sint. Do occaecat ea aliquip voluptate ea voluptate in eiusmod aliquip aute elit. Labore qui ut occaecat in id ipsum ea cillum mollit. Mollit irure mollit aute commodo sit mollit. Qui exercitation qui irure anim voluptate.</p>"
   },
   {
     "id": 2,
     "type": "Kola Kubes",
     "weight": 2.0,
     "pricePerGram": 0.02,
-    "imageUrl": "../images/kola-kube.jpg"
+    "imageUrl": "../images/kola-kube.jpg",
+    "description": "<p>Mollit ex elit esse qui et reprehenderit eiusmod nisi esse est in consequat. Occaecat excepteur ex velit adipisicing est consectetur voluptate enim ad cupidatat duis. Sunt qui irure Lorem ad et fugiat voluptate dolor deserunt fugiat. Fugiat mollit ea magna ut culpa elit Lorem cupidatat adipisicing dolore incididunt officia ex. Occaecat nostrud commodo nisi proident sunt qui elit sunt ad adipisicing ex aliquip amet enim. Commodo laboris do reprehenderit irure non eu irure aliqua incididunt et laboris. Ut ut do nisi amet sint eu adipisicing et incididunt.</p><p>Elit ad sint magna qui voluptate nostrud excepteur labore duis irure. Consequat labore tempor ad aliquip labore voluptate velit id pariatur. Mollit consequat aute id labore laborum dolor id. Nulla ad ipsum officia cillum. Dolor ipsum aliquip do fugiat.</p>"
   },
   {
     "id": 3,
     "type": "Pear Drops",
     "weight": 1.0,
     "pricePerGram": 0.01,
-    "imageUrl": "../images/pear-drops.webp"
+    "imageUrl": "../images/pear-drops.webp",
+    "description": "<p>Occaecat amet dolor laborum nulla aliquip laboris quis excepteur aliqua. Anim fugiat ullamco do pariatur non consequat consequat anim. Et Lorem nulla proident tempor aliquip id ut et veniam anim commodo. Laboris veniam eu nostrud eu ut in id consectetur incididunt aliquip voluptate consequat voluptate. Nostrud fugiat enim velit tempor minim enim id amet anim ea. Dolore ullamco laborum minim elit elit ullamco veniam velit.</p><p>Dolor laborum quis proident qui laborum reprehenderit irure occaecat. Consectetur laboris adipisicing duis enim quis Lorem sint cupidatat. Consectetur do dolor esse laborum enim consectetur Lorem.</p>"
   },
   {
     "id": 4,
     "type": "Chocolate Limes",
     "weight": 3.0,
     "pricePerGram": 0.03,
-    "imageUrl": "../images/chocolate-limes.webp"
+    "imageUrl": "../images/chocolate-limes.webp",
+    "description": "<p>Dolor labore in eiusmod ad veniam aliquip laborum aliqua pariatur minim ut irure occaecat. Labore occaecat fugiat dolore aliqua exercitation elit consectetur est amet reprehenderit. Qui irure dolor cupidatat consequat aliquip ut anim eiusmod reprehenderit tempor nulla mollit ex aliqua. Excepteur commodo commodo esse in laboris.</p><p>Magna proident exercitation ut reprehenderit dolor commodo fugiat consectetur do ut nisi magna duis. Pariatur laborum ea aliqua Lorem do irure et ea duis. Qui ea pariatur dolore est officia consectetur elit ex est labore sunt. Fugiat nostrud ullamco enim laboris dolore ex. Ullamco ea ea voluptate minim eiusmod fugiat labore consectetur aliquip ea do adipisicing. Esse ad qui ut dolore adipisicing cillum quis duis dolor aliqua exercitation. Veniam ut consectetur dolore ut dolore occaecat eiusmod.</p>"
   },
   {
     "id": 5,
     "type": "Aniseed Twists",
     "weight": 2.7,
     "pricePerGram": 0.03,
-    "imageUrl": "../images/aniseed-twists.webp"
+    "imageUrl": "../images/aniseed-twists.webp",
+    "description": "<p>Enim anim nulla non aliqua anim eu reprehenderit aute incididunt culpa labore excepteur occaecat sint. Cupidatat commodo non duis aliquip exercitation cillum amet culpa anim. Tempor dolor nisi minim aliqua labore nostrud excepteur fugiat sint. Aliquip nulla minim exercitation voluptate veniam deserunt quis ex ullamco ad quis. Cillum cupidatat ea sit fugiat fugiat commodo fugiat commodo nostrud dolor in ut esse anim.</p><p>Non fugiat elit sit occaecat sit fugiat consequat fugiat est officia labore nulla. Veniam culpa veniam exercitation velit nostrud velit ex eu adipisicing labore. Cillum duis irure laborum est consequat dolore consectetur sit. Enim velit sunt ex aute ad exercitation consequat nisi. Pariatur magna amet qui ea officia quis labore. Aliquip enim eiusmod occaecat sit est pariatur.</p>"
   },
   {
     "id": 6,
     "type": "Everton Mints",
     "weight": 3.0,
     "pricePerGram": 0.04,
-    "imageUrl": "../images/everton-mints.jpg"
+    "imageUrl": "../images/everton-mints.jpg",
+    "description": "<p>Deserunt ullamco consectetur dolore Lorem mollit laborum id adipisicing irure cillum ullamco occaecat Lorem magna. Mollit anim laborum culpa commodo. Mollit aliqua excepteur cillum cupidatat dolor et excepteur magna occaecat. Officia ea ipsum sit mollit ullamco in in eiusmod nisi anim incididunt ut id occaecat.</p><p>Lorem culpa pariatur magna occaecat officia elit culpa nostrud ullamco eiusmod dolore. Ullamco ad duis cillum ut. Sit quis ullamco excepteur anim in pariatur.</p>"
   },
   {
     "id": 7,
     "type": "Fruit BonBons",
     "weight": 2.0,
     "pricePerGram": 0.02,
-    "imageUrl": "../images/fruit-bonbons.jpg"
+    "imageUrl": "../images/fruit-bonbons.jpg",
+    "description": "<p>Labore minim ex commodo ullamco consectetur adipisicing sint dolor nisi cupidatat mollit do id in. Adipisicing sint ipsum labore veniam. Cillum sint tempor commodo amet dolore irure tempor sunt esse. Lorem veniam ut laboris amet sint eu. Anim duis minim quis nisi excepteur id velit cupidatat irure veniam officia. Ad labore et et ut do eu exercitation eu dolor.</p><p>Cupidatat aliqua aliquip consequat aute minim id tempor elit. Commodo veniam quis duis nulla. Occaecat ex ex velit enim qui nulla non enim incididunt culpa aute laboris culpa. Culpa duis ipsum non aute anim sint proident excepteur nisi ut ea do. Deserunt irure ullamco mollit voluptate consectetur exercitation nostrud eiusmod nulla do do aliqua nostrud.</p>"
   }
 ]

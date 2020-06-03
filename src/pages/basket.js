@@ -131,13 +131,11 @@ export default function Basket() {
               <td />
               <td>&pound;{(subTotal + postage).toFixed(2)}</td>
             </tr>
-            <tr>
-              <td>
-                {grossWeight < 40 && (
-                  <td>The minimum weight for delivery is 40g</td>
-                )}
-              </td>
-            </tr>
+            {grossWeight < 40 && (
+              <tr>
+                <td>The minimum weight for delivery is 40g</td>
+              </tr>
+            )}
           </tbody>
         </table>
         <div style={{ float: "right" }}>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "normalize.css"
-import sweetData from "../data/sweets.json"
+import sweetData from "../../sweets.json"
 import localForage from "localforage"
 
 import Header from "./header"
@@ -22,18 +22,21 @@ const Layout = ({ children, type, footerSpaced }) => {
 
   if (type !== "lander") {
     return (
-      <>
+      <div
+        style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+      >
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
             maxWidth: 1200,
+            flex: "1 1 auto",
           }}
         >
           <main>{children}</main>
         </div>
         <Footer hasExtraSpacing={footerSpaced} />
-      </>
+      </div>
     )
   }
 
