@@ -129,7 +129,7 @@ export default function Basket() {
             <tr>
               <td className="table__cell-title">Postage &amp; Packaging</td>
               <td />
-              <td>&pound;{postage}</td>
+              <td>&pound;{postage.toFixed(2)}</td>
             </tr>
             <tr>
               <td colSpan={3} className="table__divider"></td>
