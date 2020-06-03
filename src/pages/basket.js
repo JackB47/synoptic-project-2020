@@ -5,6 +5,7 @@ import deliveryData from "../data/delivery.json"
 import sweetData from "../../sweets.json"
 import Layout from "../components/layout"
 import Button from "../components/button"
+import SEO from "../components/seo"
 
 export default function Basket() {
   const [orderedSweets, setOrderedSweets] = useState([])
@@ -13,7 +14,7 @@ export default function Basket() {
   const [grossWeight, setGrossWeight] = useState(0)
   const filterById = id => {
     return sweetData.filter(sweetData => {
-      return sweetData["id"] == id
+      return sweetData["id"] === id
     })[0]
   }
 
@@ -38,7 +39,7 @@ export default function Basket() {
       subtotal = subtotal + prices[i]
       setSubTotal(subtotal)
     }
-  }, [orderedSweets])
+  }, [orderedSweets, subTotal])
 
   useEffect(() => {
     let grossweight = grossWeight
@@ -50,7 +51,7 @@ export default function Basket() {
       grossweight = grossweight + weights[i]
       setGrossWeight(grossweight)
     }
-  }, [orderedSweets])
+  }, [orderedSweets, grossWeight])
 
   useEffect(() => {
     deliveryData.map(
@@ -74,6 +75,7 @@ export default function Basket() {
 
   return (
     <Layout>
+      <SEO title="Basket Page" />
       <div style={{ maxWidth: 600 }}>
         <h1 className="title">Your Basket</h1>
         <table className="table" cellSpacing={12}>

@@ -14,14 +14,18 @@ export default function Footer({ hasExtraSpacing }) {
         <h4 className="footer__header">Get in Touch</h4>
         <p>
           Email:{" "}
-          <a target="_blank" href="mailto:'jack@endeavour-digital.com'">
+          <a
+            target="_blank"
+            href="mailto:'jack@endeavour-digital.com'"
+            rel="noreferrer"
+          >
             jack@endeavour-digital.com
           </a>
         </p>
 
         <p>
           Phone:{" "}
-          <a target="_blank" href="tel:07000000000">
+          <a target="_blank" href="tel:07000000000" rel="noreferrer">
             07000000000
           </a>
         </p>
@@ -46,13 +50,13 @@ export default function Footer({ hasExtraSpacing }) {
         <strong>&copy;Pick&amp;MixCandy 2020</strong>
         <p>
           Built with{" "}
-          <a target="_blank" href="https://www.gatsbyjs.org">
+          <a target="_blank" href="https://www.gatsbyjs.org" rel="noreferrer">
             Gatsby
           </a>
         </p>
         <p>
           Hosted on{" "}
-          <a target="_blank" href="https://www.netlify.com/">
+          <a target="_blank" href="https://www.netlify.com/" rel="noreferrer">
             Netlify
           </a>
         </p>

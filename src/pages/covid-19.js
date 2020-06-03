@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default function CovidPage() {
   return (
     <Layout>
+      <SEO title="Covid-19 Update" />
       <div className="generic-content">
         <h2 className="generic-content__title">Covid-19 Update</h2>
         <p className="generic-content__body">

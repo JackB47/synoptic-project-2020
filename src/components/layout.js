@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "normalize.css"
-import sweetData from "../../sweets.json"
-import localForage from "localforage"
 
 import Header from "./header"
 import "../styles/app.scss"

@@ -8,7 +8,7 @@ import sweetData from "../../sweets.json"
 
 const IndexPage = () => (
   <Layout footerSpaced>
-    <SEO title="Products" />
+    <SEO title="Pick and Mix Products" />
     <h2 className="title">Products</h2>
     <p className="sub-title">Add some sweets to get started: </p>
     <div className="flex-wrapper">

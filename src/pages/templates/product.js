@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Layout from "../../components/layout"
 import SweetInputGroup from "../../components/sweet-input-group"
 
@@ -9,6 +10,7 @@ export default function Product({ pageContext }) {
       {product ? (
         <div className="product">
           <img
+            alt={`Stock example of ${product.type}`}
             className="product__image"
             src={`/${product.imageUrl}`}
             style={{
@@ -32,4 +34,8 @@ export default function Product({ pageContext }) {
       )}
     </Layout>
   )
+}
+
+Product.propTypes = {
+  pageContext: PropTypes.shape.isRequired,
 }
